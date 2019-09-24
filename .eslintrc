@@ -5,6 +5,12 @@
   "plugins": ["react", "prettier"],
   "rules": {
     "no-undef": [1],
-    "prettier/prettier": ["error"]
+    "prettier/prettier": ["error"],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ]
   }
 }
