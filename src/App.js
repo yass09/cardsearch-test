@@ -1,7 +1,8 @@
 import React from 'react';
+import AppWrapper from './components/presentational/AppWrapper';
 
 function App() {
-  return <div className="App" />;
+  return <AppWrapper />;
 }
 
 export default App;
