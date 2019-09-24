@@ -1,0 +1,2 @@
+# Avoid linting in node modules
+node_modules/*
