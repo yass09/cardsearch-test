@@ -11,6 +11,7 @@ const TagList = ({ tagListData }) => {
   return (
     <TagListWrapper tagListData={tagListData}>
       {tagListData.map((tag, i) => {
+        // eslint-disable-next-line react/no-array-index-key
         return <Tag tag={tag} key={i} />;
       })}
     </TagListWrapper>
