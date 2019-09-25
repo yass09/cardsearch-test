@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import CardWrapper from './CardWrapper';
 import TagList from '../TagList';
-import CardTitle from '../CardTitle';
+import CardTitle from './CardTitle';
 
 const Card = ({ card }) => {
   return (

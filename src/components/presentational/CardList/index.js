@@ -3,17 +3,18 @@ import PropTypes from 'prop-types';
 
 import CardListWrapper from './CardListWrapper';
 import Card from '../Card';
+import MainWrapper from '../MainWrapper';
 
 const CardList = ({ cardListData }) => {
   return (
-    <main>
+    <MainWrapper>
       <CardListWrapper cardListData={cardListData}>
         {cardListData.map(card => {
           // eslint-disable-next-line no-underscore-dangle
           return <Card card={card} key={card._id} />;
         })}
       </CardListWrapper>
-    </main>
+    </MainWrapper>
   );
 };
 
