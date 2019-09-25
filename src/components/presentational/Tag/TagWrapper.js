@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const TagWrapper = styled.li`
   background: #fcfcfc;
-  border: 1px #ececec;
+  border: 1px solid #ececec;
   border-radius: 30px;
   color: #777;
   display: flex;
