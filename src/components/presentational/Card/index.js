@@ -17,7 +17,7 @@ Card.propTypes = {
   card: PropTypes.shape({
     _id: PropTypes.string,
     name: PropTypes.string,
-    tags: PropTypes.array(PropTypes.string),
+    tags: PropTypes.arrayOf(PropTypes.string),
   }),
 };
 
