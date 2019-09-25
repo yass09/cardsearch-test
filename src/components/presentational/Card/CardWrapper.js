@@ -6,6 +6,13 @@ const CardWrapper = styled.li`
   margin: 8px;
   padding: 10px;
   list-style: none;
+  flex-basis: 20%;
+  @media screen and (max-width: 768px) {
+    flex-basis: 40%;
+  }
+  @media screen and (max-width: 480px) {
+    flex-basis: 80%;
+  }
 `;
 
 export default CardWrapper;
