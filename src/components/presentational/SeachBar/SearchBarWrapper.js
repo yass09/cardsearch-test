@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 const SearchBarWrapper = styled.header`
+  align-items: center;
   border: 2px solid #ececec;
-  display: flex
+  display: flex;
   height: 52px;
   margin: 8px;
   max-width: 1530px;
