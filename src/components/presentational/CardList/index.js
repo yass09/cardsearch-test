@@ -8,7 +8,8 @@ const CardList = ({ cardListData }) => {
   return (
     <CardListWrapper cardListData={cardListData}>
       {cardListData.map(card => {
-        return <Card card={card} key={card.id} />;
+        // eslint-disable-next-line no-underscore-dangle
+        return <Card card={card} key={card._id} />;
       })}
     </CardListWrapper>
   );
