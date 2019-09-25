@@ -9,7 +9,11 @@ const TagWrapper = styled.li`
   font-size: 11px;
   justify-content: center;
   margin: 2px 5px;
-  padding: 2px 10px;
+  padding: 5px 10px;
+  @media screen and (max-width: 768px) {
+    margin: 2px 2px;
+    padding: 3px 7px;
+  }
 `;
 
 export default TagWrapper;

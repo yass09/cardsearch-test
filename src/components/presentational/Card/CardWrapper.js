@@ -15,10 +15,11 @@ const CardWrapper = styled.li`
   max-width: 350px;
   @media screen and (max-width: 768px) {
     flex-basis: 44%;
-    height: 70px;
+    height: 80px;
   }
   @media screen and (max-width: 480px) {
     flex-basis: 90%;
+    height: 70px;
   }
 `;
 
