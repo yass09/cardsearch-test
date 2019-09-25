@@ -7,6 +7,7 @@ const CardWrapper = styled.li`
   padding: 10px;
   list-style: none;
   flex-basis: 22%;
+  max-width: 350px;
   @media screen and (max-width: 768px) {
     flex-basis: 44%;
   }
