@@ -6,12 +6,12 @@ const CardWrapper = styled.li`
   margin: 8px;
   padding: 10px;
   list-style: none;
-  flex-basis: 20%;
+  flex-basis: 22%;
   @media screen and (max-width: 768px) {
-    flex-basis: 40%;
+    flex-basis: 44%;
   }
   @media screen and (max-width: 480px) {
-    flex-basis: 80%;
+    flex-basis: 90%;
   }
 `;
 
