@@ -1,12 +1,12 @@
 /* eslint-disable no-underscore-dangle */
 import { createStore } from 'redux';
 
-import cardListData from '../data/results.json';
+import cardsData from '../data/results.json';
 import setQueryReducer from './reducers/setQueryReducer';
 
 const defaultStore = {
   query: '',
-  cards: cardListData,
+  cards: cardsData,
 };
 
 const store = createStore(
