@@ -8,7 +8,7 @@ It will normally run on localhost port 3000 unless already occupied, in which ca
 
 This repo was left as public to allow you to review the code.
 
-I took the opportunity of this test to experiment on some of React's new features such as **Hooks**.
+I took the opportunity of this test to experiment get hands on with **Redux** from scratch.
 
 This was also my first time getting hands on with some development tools such as **ESlint**, **Prettier** and more.
 
