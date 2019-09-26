@@ -1,2 +1,2 @@
-export const SET_FILTER_TEXT = 'SET_FILTER_TEXT';
+export const SET_QUERY = 'SET_QUERY';
 export const FILTER_CARDS = 'FILTER_CARDS';
