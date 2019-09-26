@@ -2,7 +2,7 @@ const setQueryReducer = (state = [], action) => {
   switch (action.type) {
     case 'SET_QUERY':
       return {
-        state,
+        ...state,
         query: action.query,
       };
     default:

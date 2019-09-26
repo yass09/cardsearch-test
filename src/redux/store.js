@@ -3,7 +3,10 @@ import { createStore } from 'redux';
 
 import cardListData from '../data/results.json';
 
-const defaultStore = cardListData;
+const defaultStore = {
+  query: '',
+  cards: cardListData,
+};
 
 const tempReducer = () => null;
 
