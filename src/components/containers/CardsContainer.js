@@ -6,28 +6,38 @@ import CardList from '../presentational/CardList';
 import NoResultMessage from '../presentational/NoResultMessage';
 import MainWrapper from '../presentational/MainWrapper';
 
+const getVisibleCards = (cards, query) => {
+  if (!query) {
+    return cards;
+  }
+
+  const filterCallback = item =>
+    item.name.indexOf(query) > -1 || item.tags.ndexOf(query) > -1;
+  return cards.filter(filterCallback);
+};
+
 const mapStateToProps = state => ({
-  cards: state.cards,
+  visibleCards: getVisibleCards(state.cards, state.query.trim()),
 });
 
-const CardsContainer = ({ cards }) => {
-  if (!cards) {
+const CardsContainer = ({ visibleCards }) => {
+  if (!visibleCards) {
     return (
       <MainWrapper>
         <NoResultMessage />
       </MainWrapper>
     );
   }
-  return <CardList cardListData={cards} />;
+  return <CardList cardListData={visibleCards} />;
 };
 
 CardsContainer.propTypes = {
   // eslint-disable-next-line react/forbid-prop-types
-  cards: PropTypes.object,
+  visibleCards: PropTypes.array,
 };
 
 CardsContainer.defaultProps = {
-  cards: [],
+  visibleCards: [],
 };
 
 export default connect(mapStateToProps)(CardsContainer);

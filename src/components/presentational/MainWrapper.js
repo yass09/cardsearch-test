@@ -4,8 +4,9 @@ const MainWrapper = styled.main`
   align-items: center;
   display: flex;
   justify-content: center;
-  min-height: 65vh;
+  min-height: 70vh;
   text-align: center;
+  width: 100%;
   @media screen and (max-width: 768px) {
     min-height: 90vh;
   }
