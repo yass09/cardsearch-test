@@ -2,16 +2,15 @@
 import { createStore } from 'redux';
 
 import cardListData from '../data/results.json';
+import setQueryReducer from './reducers/setQueryReducer';
 
 const defaultStore = {
   query: '',
   cards: cardListData,
 };
 
-const tempReducer = () => null;
-
 const store = createStore(
-  tempReducer,
+  setQueryReducer,
   defaultStore,
   window.__REDUX_DEVTOOLS_EXTENSION__ &&
     window.__REDUX_DEVTOOLS_EXTENSION__(),
